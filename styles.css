@@ -20,7 +20,6 @@ body {
     display: flex;
     justify-content: center;
     gap: 2em;
-    flex-wrap: wrap;
 }
 
 #left {
@@ -133,4 +132,52 @@ hr {
     width: 30%;
     margin: 0.3em;
     object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    #profileInfo {
+        width: 95%;
+        gap: 1em;
+    }
+
+    #left {
+        width: 100%;
+    }
+
+    #left img {
+        width: 40%;  /* Larger profile picture on mobile */
+    }
+
+    #right {
+        width: 100%;
+    }
+
+    #userTop {
+        flex-wrap: wrap;
+        gap: 0.5em;
+    }
+
+    .button {
+        padding: 0.5em 1em;
+        font-size: 0.9em;
+    }
+
+    #infoMid {
+        justify-content: space-around;
+        margin: 1em 0;
+    }
+
+    #feed {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post {
+        width: 95%;
+        margin: 0.5em 0;
+    }
+
+    #bar {
+        width: 95%;
+    }
 }
